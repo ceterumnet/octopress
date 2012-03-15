@@ -2,9 +2,9 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
+url: http://davesblog.com
+title: Dave's Blog 
+subtitle: My Collection of Hobbies, Code and Other Ramblings
 author: Your Name
 simple_search: http://google.com/search
 description:

@@ -5,7 +5,7 @@
 url: http://davesblog.com
 title: Dave's Blog 
 subtitle: My Collection of Hobbies, Code and Other Ramblings
-author: Your Name
+author: David Raphael
 simple_search: http://google.com/search
 description:
 
@@ -64,7 +64,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: draphael
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
@@ -96,4 +96,4 @@ disqus_show_comment_count: false
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: false
+facebook_like: true

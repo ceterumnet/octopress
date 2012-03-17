@@ -6,4 +6,4 @@ comments: true
 categories: 
 ---
 
-This is a sweet way of getting current git info in your prompt in OS X…this saves me from those “damn, I’m on the wrong branch…” moments - http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/
+This is a sweet way of getting current git info in your prompt in OS X…this saves me from those “damn, I’m on the wrong branch…” moments - <a href="http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/">http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/</a>

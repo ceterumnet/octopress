@@ -3,7 +3,7 @@ layout: post
 title: "using git with a proxy"
 date: 2010-05-03 14:09
 comments: true
-categories: 
+categories: code
 ---
 Some of us are stuck behind a corporate firewall, but need to access all the great little github plugins through git!  So what do you do?
 

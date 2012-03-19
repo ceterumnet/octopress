@@ -3,7 +3,7 @@ layout: post
 title: "0% Interest for 6 Months"
 date: 2010-01-25 14:14
 comments: true
-categories: 
+categories: code
 ---
 
 Rapid Application Development is not a technology, but it is a mindset that is prevalent in a very small percentage of developers.  This mindset involves an obsession with code quality and never letting the code base get out in front of the developers.  It’s the same mentality that "The Millionaire Next Door" preaches - save money, don’t accumulate debt, live below your means, etc…  

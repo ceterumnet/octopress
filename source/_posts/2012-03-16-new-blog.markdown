@@ -3,7 +3,7 @@ layout: post
 title: "New Blog Engine!"
 date: 2012-03-16 14:27
 comments: true
-categories: 
+categories: general
 ---
 
 I have deliberated for a while now on what to do with my blog.  I have not been particularly active in my blogging, but I have definitely been thinking about a number of things I need to blog about.  However, I found that my blogging engine (Typo) was very limiting for me.  It turns out, that most blogging engines are limiting to me.  I am not very comfortable using a web UI for my workflow!  I am a coder that uses SVN, git etc...day in and day out for my daily work.  So I asked my friend, Glenn Vanderburg, if he had any ideas - and he suggested Octopress.  

@@ -2,10 +2,10 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/ceterumnet/"
+http_images_path = "/ceterumnet/images"
+http_fonts_path = "/ceterumnet/fonts"
+css_dir = "public/ceterumnet/stylesheets"
 
 # Local development paths
 sass_dir = "sass"

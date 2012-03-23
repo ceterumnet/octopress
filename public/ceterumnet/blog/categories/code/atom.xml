@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: code | Dave's Blog]]></title>
+  <link href="http://ceterumnet.github.com/blog/categories/code/atom.xml" rel="self"/>
+  <link href="http://ceterumnet.github.com/"/>
+  <updated>2012-03-23T10:12:41-05:00</updated>
+  <id>http://ceterumnet.github.com/</id>
+  <author>
+    <name><![CDATA[David Raphael]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[git Tips and Tricks]]></title>
+    <link href="http://ceterumnet.github.com/blog/2010/05/17/git-tips-and-tricks/"/>
+    <updated>2010-05-17T14:04:00-05:00</updated>
+    <id>http://ceterumnet.github.com/blog/2010/05/17/git-tips-and-tricks</id>
+    <content type="html"><![CDATA[<p>This is a sweet way of getting current git info in your prompt in OS X…this saves me from those “damn, I’m on the wrong branch…” moments - <a href="http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/">http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[using git with a proxy]]></title>
+    <link href="http://ceterumnet.github.com/blog/2010/05/03/using-git-with-a-proxy/"/>
+    <updated>2010-05-03T14:09:00-05:00</updated>
+    <id>http://ceterumnet.github.com/blog/2010/05/03/using-git-with-a-proxy</id>
+    <content type="html"><![CDATA[<p>Some of us are stuck behind a corporate firewall, but need to access all the great little github plugins through git!  So what do you do?</p>
+
+<p>Create the following wrapper:</p>
+
+<p>``` bash ( ~/bin/proxy-wrapper ):</p>
+
+<p>!/bin/sh</p>
+
+<p>Put your own values</p>
+
+<p>PROXY_IP=127.0.0.1
+PROXY_PORT=1090</p>
+
+<p>nc -x${PROXY_IP}:${PROXY_PORT} -X5 $*
+```</p>
+
+<p><code>bash add this to your ~/.profile or ~/.bash_rc etc…
+export GIT_PROXY_COMMAND=~/bin/proxy-wrapper
+</code></p>
+
+<p>I stole this solution from <a href="http://blogs.gnome.org/juanje/2009/07/17/git_behind_proxy/">http://blogs.gnome.org/juanje/2009/07/17/git_behind_proxy/</a></p>
+
+<p>Cheers, Dave</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Security on Rails is Beta!]]></title>
+    <link href="http://ceterumnet.github.com/blog/2010/04/16/security-on-rails-is-beta-slash/"/>
+    <updated>2010-04-16T14:13:00-05:00</updated>
+    <id>http://ceterumnet.github.com/blog/2010/04/16/security-on-rails-is-beta-slash</id>
+    <content type="html"><![CDATA[<p>Our book is now available as a Pragmatic Bookshelf Beta - <a href="http://pragprog.com/book/fr_secure/security-on-rails">Security on Rails</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[0% Interest for 6 Months]]></title>
+    <link href="http://ceterumnet.github.com/blog/2010/01/25/0-percent-interest-for-6-months/"/>
+    <updated>2010-01-25T14:14:00-06:00</updated>
+    <id>http://ceterumnet.github.com/blog/2010/01/25/0-percent-interest-for-6-months</id>
+    <content type="html"><![CDATA[<p>Rapid Application Development is not a technology, but it is a mindset that is prevalent in a very small percentage of developers.  This mindset involves an obsession with code quality and never letting the code base get out in front of the developers.  It’s the same mentality that "The Millionaire Next Door" preaches - save money, don’t accumulate debt, live below your means, etc…</p>
+
+<p>We win the race of great software through diligent unit testing, refactoring, coding standards and frequent releases.  Any tool or toolset that doesn’t allow us to manage the source code at a source code level will only detract from this ability to deliver great software.  Sure, we can use RAD tools that generate copious amounts of code.  But that code becomes stale, and it doesn’t evolve with our software.  It’s a lot like 0% interest financing.  It’s a way to get something that doesn’t have a fiscal impact in the first 6 months of ownership.  But those payments are due after the 6 months pass - with accrued interest.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Coding without Unit Tests is like using a Credit Card]]></title>
+    <link href="http://ceterumnet.github.com/blog/2009/01/30/coding-without-unit-tests-is-like-using-a-credit-card/"/>
+    <updated>2009-01-30T14:15:00-06:00</updated>
+    <id>http://ceterumnet.github.com/blog/2009/01/30/coding-without-unit-tests-is-like-using-a-credit-card</id>
+    <content type="html"><![CDATA[<p>Occasionally I find myself a few days (or sometimes weeks) into some piece of code that I’ve been working on without good test coverage. I just realized that it’s the same feeling I get when I use a credit card. I know I’ll be in trouble if I don’t take care of it ASAP.</p>
+]]></content>
+  </entry>
+  
+</feed>

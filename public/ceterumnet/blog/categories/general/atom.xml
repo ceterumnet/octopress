@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: general | Dave's Blog]]></title>
+  <link href="http://ceterumnet.github.com/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://ceterumnet.github.com/"/>
+  <updated>2012-03-23T10:12:41-05:00</updated>
+  <id>http://ceterumnet.github.com/</id>
+  <author>
+    <name><![CDATA[David Raphael]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[New Blog Engine!]]></title>
+    <link href="http://ceterumnet.github.com/blog/2012/03/16/new-blog/"/>
+    <updated>2012-03-16T14:27:00-05:00</updated>
+    <id>http://ceterumnet.github.com/blog/2012/03/16/new-blog</id>
+    <content type="html"><![CDATA[<p>I have deliberated for a while now on what to do with my blog.  I have not been particularly active in my blogging, but I have definitely been thinking about a number of things I need to blog about.  However, I found that my blogging engine (Typo) was very limiting for me.  It turns out, that most blogging engines are limiting to me.  I am not very comfortable using a web UI for my workflow!  I am a coder that uses SVN, git etc...day in and day out for my daily work.  So I asked my friend, Glenn Vanderburg, if he had any ideas - and he suggested Octopress.</p>
+
+<p>So far, it seems that <a href="http://octopress.org/">Octopress</a> really fits the bill.  I generally like using a text editor and version control for everything - including documentation.  I am somewhat of a fan of wikis, but I prefer having raw access to my source trees.  So Octopress really allows you to hack away at your blog, and then push and deploy just like you would any other software.</p>
+
+<p>Migration was easy since I didn't really have that much content to begin with.  I simply cut and pasted my blog content into new articles generated through rake.  I'll recap the steps I took:</p>
+
+<ol>
+<li>First, I forked Octopress from github</li>
+<li>Next, I edited _config.yml to reflect my site configuration...this is pretty self explanatory.</li>
+<li>Then, I generated new posts via <code>rake new_post["..."]</code></li>
+<li>I edited those posts to reflect the original publication date from my former blog</li>
+<li>Finally, I tested everything using <code>rake preview</code></li>
+<li>Once everything was to my liking, I edited my remote server nginx configuration to point at a directory I created to hold my content.</li>
+<li>Restarted nginx on my remote server</li>
+<li>ran <code>rake deploy</code></li>
+<li>BAM!  It was done.</li>
+</ol>
+
+
+<p>I absolutely love this new approach to my blog so far.  It is static content!!!  No database...at least not for now.  I hope that this can stay as static as possible.  I really just want a place to call my home page where I can rant and write about my hobbies and code etc... without thinking about another web application that I have to manage.  Not to mention - I don't like working through a web based workflow to being with, so this really lends itself to a hacker style blog!  I'll just have to get up to speed with all of the various formatting options...</p>
+]]></content>
+  </entry>
+  
+</feed>

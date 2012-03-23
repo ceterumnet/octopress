@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Dave's Blog</title>
+  <meta name="author" content="David Raphael">
+
+  
+  <meta name="description" content="
+">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ceterumnet.github.com">
+  <link href="/ceterumnet/favicon.png" rel="icon">
+  <link href="/ceterumnet/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/ceterumnet/javascripts/modernizr-2.0.js"></script>
+  <script src="/ceterumnet/javascripts/ender.js"></script>
+  <script src="/ceterumnet/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/ceterumnet/atom.xml" rel="alternate" title="Dave's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/ceterumnet/">Dave's Blog</a></h1>
+  
+    <h2>My Collection of Hobbies, Code and Other Ramblings</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/ceterumnet/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ceterumnet.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/ceterumnet/">Blog</a></li>
+  <li><a href="/ceterumnet/blog/archives">Archives</a></li>
+  <!-- <li><a href="/ceterumnet/blog/categories">Categories</a></li> -->
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ceterumnet/blog/2012/03/23/getting-started-with-my-3d-printer/">Getting Started With My 3d Printer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-23T10:09:00-05:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ceterumnet/blog/2012/03/16/new-blog/">New Blog Engine!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-16T14:27:00-05:00" pubdate data-updated="true">Mar 16<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have deliberated for a while now on what to do with my blog.  I have not been particularly active in my blogging, but I have definitely been thinking about a number of things I need to blog about.  However, I found that my blogging engine (Typo) was very limiting for me.  It turns out, that most blogging engines are limiting to me.  I am not very comfortable using a web UI for my workflow!  I am a coder that uses SVN, git etc&#8230;day in and day out for my daily work.  So I asked my friend, Glenn Vanderburg, if he had any ideas - and he suggested Octopress.</p>
+
+<p>So far, it seems that <a href="http://octopress.org/">Octopress</a> really fits the bill.  I generally like using a text editor and version control for everything - including documentation.  I am somewhat of a fan of wikis, but I prefer having raw access to my source trees.  So Octopress really allows you to hack away at your blog, and then push and deploy just like you would any other software.</p>
+
+<p>Migration was easy since I didn&#8217;t really have that much content to begin with.  I simply cut and pasted my blog content into new articles generated through rake.  I&#8217;ll recap the steps I took:</p>
+
+<ol>
+<li>First, I forked Octopress from github</li>
+<li>Next, I edited _config.yml to reflect my site configuration&#8230;this is pretty self explanatory.</li>
+<li>Then, I generated new posts via <code>rake new_post["..."]</code></li>
+<li>I edited those posts to reflect the original publication date from my former blog</li>
+<li>Finally, I tested everything using <code>rake preview</code></li>
+<li>Once everything was to my liking, I edited my remote server nginx configuration to point at a directory I created to hold my content.</li>
+<li>Restarted nginx on my remote server</li>
+<li>ran <code>rake deploy</code></li>
+<li>BAM!  It was done.</li>
+</ol>
+
+
+<p>I absolutely love this new approach to my blog so far.  It is static content!!!  No database&#8230;at least not for now.  I hope that this can stay as static as possible.  I really just want a place to call my home page where I can rant and write about my hobbies and code etc&#8230; without thinking about another web application that I have to manage.  Not to mention - I don&#8217;t like working through a web based workflow to being with, so this really lends itself to a hacker style blog!  I&#8217;ll just have to get up to speed with all of the various formatting options&#8230;</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ceterumnet/blog/2010/05/17/git-tips-and-tricks/">Git Tips and Tricks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-17T14:04:00-05:00" pubdate data-updated="true">May 17<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is a sweet way of getting current git info in your prompt in OS X…this saves me from those “damn, I’m on the wrong branch…” moments - <a href="http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/">http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ceterumnet/blog/2010/05/03/using-git-with-a-proxy/">Using Git With a Proxy</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-03T14:09:00-05:00" pubdate data-updated="true">May 3<span>rd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Some of us are stuck behind a corporate firewall, but need to access all the great little github plugins through git!  So what do you do?</p>
+
+<p>Create the following wrapper:</p>
+
+<figure class='code'><figcaption><span>( ~/bin/proxy-wrapper ):</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>!/bin/sh
+</span><span class='line'>
+</span><span class='line'>Put your own values
+</span><span class='line'>
+</span><span class='line'><span class="nv">PROXY_IP</span><span class="o">=</span>127.0.0.1
+</span><span class='line'><span class="nv">PROXY_PORT</span><span class="o">=</span>1090
+</span><span class='line'>
+</span><span class='line'>nc -x<span class="k">${</span><span class="nv">PROXY_IP</span><span class="k">}</span>:<span class="k">${</span><span class="nv">PROXY_PORT</span><span class="k">}</span> -X5 <span class="nv">$*</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>add this to your ~/.profile or ~/.bash_rc etc…</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">GIT_PROXY_COMMAND</span><span class="o">=</span>~/bin/proxy-wrapper
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I stole this solution from <a href="http://blogs.gnome.org/juanje/2009/07/17/git_behind_proxy/">http://blogs.gnome.org/juanje/2009/07/17/git_behind_proxy/</a></p>
+
+<p>Cheers, Dave</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ceterumnet/blog/2010/04/16/security-on-rails-is-beta-slash/">Security on Rails Is Beta!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-04-16T14:13:00-05:00" pubdate data-updated="true">Apr 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Our book is now available as a Pragmatic Bookshelf Beta - <a href="http://pragprog.com/book/fr_secure/security-on-rails">Security on Rails</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ceterumnet/blog/2010/01/25/0-percent-interest-for-6-months/">0% Interest for 6 Months</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-25T14:14:00-06:00" pubdate data-updated="true">Jan 25<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Rapid Application Development is not a technology, but it is a mindset that is prevalent in a very small percentage of developers.  This mindset involves an obsession with code quality and never letting the code base get out in front of the developers.  It’s the same mentality that &#8220;The Millionaire Next Door&#8221; preaches - save money, don’t accumulate debt, live below your means, etc…</p>
+
+<p>We win the race of great software through diligent unit testing, refactoring, coding standards and frequent releases.  Any tool or toolset that doesn’t allow us to manage the source code at a source code level will only detract from this ability to deliver great software.  Sure, we can use RAD tools that generate copious amounts of code.  But that code becomes stale, and it doesn’t evolve with our software.  It’s a lot like 0% interest financing.  It’s a way to get something that doesn’t have a fiscal impact in the first 6 months of ownership.  But those payments are due after the 6 months pass - with accrued interest.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/ceterumnet/blog/2009/01/30/coding-without-unit-tests-is-like-using-a-credit-card/">Coding Without Unit Tests Is Like Using a Credit Card</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-30T14:15:00-06:00" pubdate data-updated="true">Jan 30<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Occasionally I find myself a few days (or sometimes weeks) into some piece of code that I’ve been working on without good test coverage. I just realized that it’s the same feeling I get when I use a credit card. I know I’ll be in trouble if I don’t take care of it ASAP.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/ceterumnet/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/ceterumnet/blog/2012/03/23/getting-started-with-my-3d-printer/">getting started with my 3d printer</a>
+      </li>
+    
+      <li class="post">
+        <a href="/ceterumnet/blog/2012/03/16/new-blog/">New Blog Engine!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/ceterumnet/blog/2010/05/17/git-tips-and-tricks/">git Tips and Tricks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/ceterumnet/blog/2010/05/03/using-git-with-a-proxy/">using git with a proxy</a>
+      </li>
+    
+      <li class="post">
+        <a href="/ceterumnet/blog/2010/04/16/security-on-rails-is-beta-slash/">Security on Rails is Beta!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/ceterumnet">@ceterumnet</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'ceterumnet',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/ceterumnet/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("draphael", 4, false);
+    });
+  </script>
+  <script src="/ceterumnet/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/draphael" class="twitter-follow-button" data-show-count="false">Follow @draphael</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - David Raphael -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

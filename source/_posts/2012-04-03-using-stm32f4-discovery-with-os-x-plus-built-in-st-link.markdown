@@ -5,7 +5,7 @@ date: 2012-04-03 11:26
 comments: true
 categories: 
 ---
-In me previous post - I talked about using an STM32F103 based Cortex M3 with OS X.  Since that post, I've ordered one of these - <a href="http://www.st.com/internet/evalboard/product/252419.jsp">STM32F4-Discovery</a>.  I am thinking about porting the work done with <a href="http://smoothieware.org/">smoothieware</a> from the LPC17xx platform to the STM32xxxx platform.  The STM32F4-Discovery is a relatively new development board that shows a lot of promise.  At ~$15 it is a bargain platform with a lot of features.
+In a previous post - I talked about using an STM32F103 based Cortex M3 with OS X.  Since that post, I've ordered one of these - <a href="http://www.st.com/internet/evalboard/product/252419.jsp">STM32F4-Discovery</a>.  I am thinking about porting the work done with <a href="http://smoothieware.org/">smoothieware</a> from the LPC17xx platform to the STM32xxxx platform.  The STM32F4-Discovery is a relatively new development board that shows a lot of promise.  At ~$15 it is a bargain platform with a lot of features.
 
 As usual, I need all of my goodies to work on my Mac and Windows boxes since I go back and forth a lot.  The following is a quick guide to getting this up and running with OS X Lion.
 

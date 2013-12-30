@@ -61,14 +61,15 @@ TODO: add some explanation for the modprobe command
 So once I had the GameCube controller wired up, it was time to load the driver.  After some experimentation, I figured out the command to load the driver for GPIO2:
 
 {% codeblock %}
- > sudo modprobe gamecon_gpio_rpi map=0,0,0,0,3,0
+ sudo modprobe gamecon_gpio_rpi map=0,0,0,0,3,0
 {% endcodeblock %}
 
 I also added this command to /etc/modules so it would be loaded at startup time:
 
 {% codeblock %}
- > sudo vi /etc/modules
+  sudo vi /etc/modules
 {% endcodeblock %}
+
 
 There is a program for testing gamecontrollers hooked up called jstest - I ran it like this:
 
@@ -171,7 +172,7 @@ It measured at 4us - which matched what other articles I found while doing resea
 TODO:  Change screen shot to show 2us...
 Doh!  It measured at 2us.  That doesn't seem right...so I dug into the code that sends the command:
 
-{% codeblock lang:c gamecon_gpio_rpi.c start:100 mark:5,5-5 %}
+{% codeblock lang:c gamecon_gpio_rpi.c start:1 mark:5,5-5 %}
 /* Send encoded command */
 static inline void gc_n64_send_command(struct gc_nin_gpio *ningpio)
 {

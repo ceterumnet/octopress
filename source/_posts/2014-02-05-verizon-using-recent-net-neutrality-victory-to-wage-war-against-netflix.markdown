@@ -13,7 +13,7 @@ One evening I also noticed a slowdown while using our service from my house.  I 
 
 Since we host all of our infrastructure on Amazon's AWS - I decided to do a little test - I grabbed a URL from AWS S3 and loaded it.
 
-40kb/s.
+40kB/s.
 
 WTF.
 
@@ -21,7 +21,7 @@ I also noticed that our Netflix streaming quality is awful compared to just a fe
 
 Next, I remoted into our office - about a mile away from my house.  I tested the same link -
 
-5000kb/s.
+5000kB/s.
 
 WTF.
 

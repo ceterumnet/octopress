@@ -50,3 +50,33 @@ That's when I decided to press him.  Here is a screen capture of the final part 
 Frankly, I was surprised he admitted to this.  I've since tested this almost every day for the last couple of weeks.   During the day - the bandwidth is normal to AWS.  However, after 4pm or so - things get slow.
 
 In my personal opinion, this is Verizon waging war against Netflix.  Unfortunately, a lot of infrastructure is hosted on AWS.  That means a lot of services are going to be impacted by this.
+
+PS> a number of folks have questioned the expertise of the support individual.  I completely understand.  I'm not a networking expert, but I did want to share 2 more pieces of data that I think are significant:
+
+Traceroute from Residential Side:
+
+```
+Tracing route to iscanonline.com [23.21.158.115]
+over a maximum of 30 hops:
+
+  1    <1 ms    <1 ms    <1 ms  192.168.1.1
+  2     7 ms     7 ms     8 ms  L100.DLLSTX-VFTTP-65.verizon-gni.net [173.74.57.1]
+  3    10 ms     6 ms     9 ms  G0-5-2-0.DLLSTX-LCR-21.verizon-gni.net [130.81.190.204]
+  4    16 ms     9 ms    10 ms  so-5-0-0-0.DFW9-BB-RTR1.verizon-gni.net [130.81.199.34]
+  5    10 ms     9 ms     9 ms  0.xe-3-3-0.BR2.DFW13.ALTER.NET [152.63.100.5]
+  6     9 ms    10 ms     9 ms  204.255.168.158
+  7    10 ms     9 ms    10 ms  ae-1.r08.dllstx09.us.bb.gin.ntt.net [129.250.3.27]
+```
+
+Traceroute from Business line (1 mile away)
+```
+ traceroute to iscanonline.com (23.21.158.115), 64 hops max, 52 byte packets
+ 1  192.168.1.1 (192.168.1.1)  18.036 ms  1.326 ms  2.318 ms
+ 2  l100.dllstx-vfttp-93.verizon-gni.net (71.244.30.1)  5.870 ms  5.211 ms  5.193 ms
+ 3  g0-5-0-2.dllstx-lcr-21.verizon-gni.net (130.81.138.12)  7.400 ms  67.679 ms  10.605 ms
+ 4  so-5-0-0-0.dfw9-bb-rtr1.verizon-gni.net (130.81.199.34)  12.062 ms  6.652 ms  17.799 ms
+ 5  0.xe-3-3-0.br2.dfw13.alter.net (152.63.100.5)  7.207 ms  7.858 ms  9.616 ms
+ 6  204.255.168.158 (204.255.168.158)  7.435 ms  7.256 ms  10.366 ms
+ 7  ae-1.r08.dllstx09.us.bb.gin.ntt.net (129.250.3.27)  7.365 ms  10.160 ms  9.083 ms
+
+```

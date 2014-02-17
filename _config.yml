@@ -90,8 +90,8 @@ pinboard_user: ceterumnet
 pinboard_count: 3
 
 # Delicious
-delicious_user: ceterumnet
-delicious_count: 3
+# delicious_user: ceterumnet
+# delicious_count: 3
 
 # Disqus Comments
 disqus_short_name:

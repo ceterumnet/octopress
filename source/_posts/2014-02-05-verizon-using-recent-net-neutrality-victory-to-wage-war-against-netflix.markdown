@@ -5,6 +5,16 @@ date: 2014-02-05 07:25:50 -0600
 comments: true
 categories:
 ---
+
+
+----------
+<strong>UPDATE:</strong>
+The team over at Speedchecker Ltd has created a speedtest oriented around this issue.  They are going to be collecting data and presenting findings if they get enough data:
+
+<a href="http://netneutralitytest.com/">http://netneutralitytest.com/</a>
+
+----------
+
 I usually don't post articles about current affairs.   However, a recent series of events has inspired me to write about this.
 
 Towards the end of January, the president of our company - <a href="https://www.iscanonline.com">iScan Online, Inc.</a>, was complaining that our service was experiencing major slowdowns.  I investigated the issue, but I couldn't find anything wrong with our production environment.  We were stumped.
